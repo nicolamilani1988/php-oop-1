@@ -85,8 +85,8 @@
                 </div>
 
                 <div class="links">
-                    <a href="http://localhost:8000/user">Users</a>
-                    <a href="http://localhost:8000/movie">Movies</a>
+                    <a href="{{route('userpage')}}">Users</a>
+                    <a href="{{route('moviepage')}}">Movies</a>
                 </div>
             </div>
         </div>
