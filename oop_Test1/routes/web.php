@@ -13,9 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/welcome', function () {
+Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', 'TestController@home')
-->name('homepage');
+Route::get('/user', 'TestController@home')
+->name('userpage');
+
+Route::get('/movie', 'TestController2@userControl')
+->name('moviepage');
